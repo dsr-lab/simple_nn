@@ -5,7 +5,7 @@ import torch
 
 from config import *
 from simple_nn import SimpleNN
-from utils import Cifar10, DatasetLoader
+from nn_utils import Cifar10, DatasetLoader
 
 
 def train_model(ds: DatasetLoader, weights_path):
@@ -124,8 +124,6 @@ def main():
     train_model(ds, current_path)
 
     test_model(ds, current_path)
-
-    # input("Press Enter to exit...")
 
 
 if __name__ == "__main__":

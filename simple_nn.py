@@ -1,8 +1,10 @@
 import torch
 import torch.nn.functional as F
 
-from utils import number_of_correct_samples
+
 from timeit import default_timer as timer
+
+from nn_utils import number_of_correct_samples
 
 
 class SimpleNN(torch.nn.Module):
